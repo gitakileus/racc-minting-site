@@ -1,0 +1,116 @@
+.hero-left-lines {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation-name: new;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+  /* z-index: -1; */
+}
+
+.hero-left-lines-static {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.earth-1 {
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  z-index:5;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 30px;
+}
+
+.earth-2 {
+  position: absolute;
+  left: 70%;
+  top: 10%;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 30px;
+}
+
+.earth-3 {
+  position: absolute;
+  left: 60%;
+  top: 50%;
+  animation-name: change;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 30px;
+}
+
+.star1 {
+  position: absolute;
+  left: 60%;
+  top: 40%;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 20px;
+  box-shadow: 0px 0px 30px 2px white;
+  border-radius: 50%;
+}
+
+.star2 {
+  position: absolute;
+  left: 7%;
+  top: 20%;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 15px;
+  box-shadow: 0px 0px 30px 2px white;
+  border-radius: 50%;
+}
+
+.star3 {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 15px;
+  box-shadow: 0px 0px 30px 2px white;
+  border-radius: 50%;
+}
+
+.star4 {
+  position: absolute;
+  left: 30%;
+  top: 30%;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  width: 100%;
+  max-width: 25px;
+  box-shadow: 0px 0px 30px 2px white;
+  border-radius: 50%;
+}

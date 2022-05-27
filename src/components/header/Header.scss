@@ -1,0 +1,149 @@
+ nav{
+  background: linear-gradient(180deg, #0c0026 0%, rgba(12, 0, 42, 0) 100%);
+ }
+    a.menuItem {
+      text-decoration: none;
+      -webkit-transition: 0.3s ease-in;
+      transition: 0.3s ease-in;
+      
+      color: white;
+      position: relative;
+      // color: red;
+      &:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: -5px;
+        content: '';
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: white;
+        -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+    .icon {
+      transition: all 0.3s ease-in-out;
+    }
+
+    .icon:hover {
+      transform: translateY(-5px);
+    }
+
+    .icon:hover path {
+      fill: red;
+      transition: all 0.3s ease-in-out;
+    }
+.menuNav {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+
+  z-index: -1;
+
+  li {
+    // transition: 1.3s ease;
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.hideMenuNav {
+  opacity: 0;
+}
+.showMenuNav {
+  opacity: 1;
+
+  // background: url("../../assets/images/lap-off-bg-img.png");
+  background: linear-gradient(180deg, #0f2264 0%, #170047 100%);
+  z-index: 10;
+  height: 220%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes change2 {
+  0% {
+    transform: scale(0.6);
+  }
+
+  25% {
+    transform: scale(1.1);
+  }
+
+  50% {
+    transform: scale(0.7);
+  }
+
+  75% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0.6);
+  }
+}
+
+@keyframes change {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes new {
+  0% {
+    transform: scale(0.9);
+  }
+
+  25% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 400px) {
+  .star1 {
+    max-width: 10px;
+  }
+
+  .star2 {
+    max-width: 8px;
+  }
+
+  .star3 {
+    max-width: 10px;
+  }
+
+  .star4 {
+    max-width: 12px;
+  }
+}
